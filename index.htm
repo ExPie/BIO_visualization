@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BIO visualizator</title>
+	<script type="text/javascript" src="test.js"></script>
+</head>
+<body onload="main()">
+	<canvas id="canvas" width="800" height="600" style="border: 1px solid black"></canvas>
+
+	<div>
+		<br>
+		<input type="button" name="animate" value="Start animation" onclick="if(!inProgress)start_animate();">
+		<h3>Starting values:</h3>
+		A: <input type="text" name="var_A" id="var_A" value="12.0">
+		B: <input type="text" name="var_B" id="var_B" value="0.0">
+		C: <input type="text" name="var_C" id="var_C" value="54.0">
+		<br>
+		mA: <input type="text" name="var_mA" id="var_mA" value="0.0">
+		mB: <input type="text" name="var_mB" id="var_mB" value="0.0">
+		mC: <input type="text" name="var_mC" id="var_mC" value="0.0">
+		<h3>Parameters:</h3>
+
+		alpha: <input type="text" name="param_alpha" id="param_alpha" value="5.0"> <br>
+		alpha_0: <input type="text" name="param_alpha_0" id="param_alpha_0" value="0.0005"> <br>
+		Kd: <input type="text" name="param_Kd" id="param_Kd" value="10.0"> <br>
+		delta_m: <input type="text" name="param_delta_m" id="param_delta_m" value="0.1"> <br>
+		delta_p: <input type="text" name="param_delta_p" id="param_delta_p" value="0.1"> <br>
+		n: <input type="text" name="param_n" id="param_n" value="2"> <br>
+		beta: <input type="text" name="param_beta" id="param_beta" value="1.0"> <br>
+	</div>
+</body>
+</html>
